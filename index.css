@@ -1,64 +1,71 @@
-body{
-    background-image: url(/images/bg31.jpg);
+body {
+    background-image: url(./images/bg31.jpg);
     background-color: #21201e;
     background-position: fixed;
     background-size: 100%;
-    
-  background-repeat: auto;
-  color: #fea609;
-  
-  
+
+    background-repeat: auto;
+    color: #fea609;
+
+
 }
-.parent{
+
+.parent {
     margin-top: 50px;
     display: flex;
-  
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 05px;
-  
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 05px;
+
 }
-h1{
+
+h1 {
     text-align: center;
 }
-.maindiv{
+
+.maindiv {
     width: 400px;
-    
+
     background-color: #21201e;
-            opacity: 90%;
-            padding: 15px;
-            border-radius: 18px 0px 0px 18px;
-            box-shadow: 0 0px 4px #fea609;
-            
-            margin-top: 0px;
-            
+    opacity: 90%;
+    padding: 15px;
+    border-radius: 18px 0px 0px 18px;
+    box-shadow: 0 0px 4px #fea609;
+
+    margin-top: 0px;
+
 }
-.listdiv{
+
+.listdiv {
     width: 400px;
-    
+
     background-color: #21201e;
-            opacity: 90%;
-            padding: 20px;
-            border-radius: 0px 18px 18px 0px;
-            box-shadow: 0 0px 4px #fea609;
-            
-            margin-top: 0px;
+    opacity: 90%;
+    padding: 20px;
+    border-radius: 0px 18px 18px 0px;
+    box-shadow: 0 0px 4px #fea609;
+
+    margin-top: 0px;
 }
-.maindiv img{
+
+.maindiv img {
     width: 60px;
     height: 60px;
     margin-top: -100px;
     margin-left: -40px;
 }
-.listdiv img{
+
+.listdiv img {
     width: 60px;
     height: 60px;
     margin-top: -45px;
     margin-right: -40px;
     float: right;
 }
-input{
+
+input {
     width: 350px;
     height: 30px;
     color: #fea609;
@@ -66,18 +73,19 @@ input{
     border-radius: 05px;
     border: #fea609;
     background-color: black;
-    
+
 }
-#Submit-btn{
-    
+
+#Submit-btn {
+
     padding: 10px;
     color: #fea609;
     background-color: black;
-    border-radius: 05px ;
+    border-radius: 05px;
     border: #ddd;
 }
 
-#itemList li{
+#itemList li {
     padding: 20px;
     list-style: none;
     /*box-shadow: 0 4px 8px rgba(62, 233, 0, 0.1); */
@@ -86,7 +94,7 @@ input{
     text-align: center;
 }
 
-.delete-btn{
+.delete-btn {
     float: right;
     /* background-color: red; */
     color: red;
@@ -95,14 +103,18 @@ input{
     cursor: pointer;
     border-radius: 10px;
 }
+
 .completed-task {
-    text-decoration: line-through; /* Add a strikethrough effect */
-    color: #888; /* Change the color as needed */
-    
+    text-decoration: line-through;
+    /* Add a strikethrough effect */
+    color: #888;
+    /* Change the color as needed */
+
 }
 
 .important-task {
-    background-color: orange; /* Change the color as needed */
+    background-color: orange;
+    /* Change the color as needed */
     color: #21201e;
 }
 
@@ -111,8 +123,20 @@ input{
     margin-left: 10px;
 }
 
-.mark-important-btn {
-    background-color: black; /* Change the color as needed */
+.mark-important-btn{
+    background-color: black;
+    /* Change the color as needed */
+    color: #fea609;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: right;
+    margin-right: 2px;
+    border-radius: 10px;
+} 
+.edit-task-btn{
+    background-color: black;
+    /* Change the color as needed */
     color: #fea609;
     border: none;
     padding: 5px 10px;
@@ -127,10 +151,11 @@ input{
     margin-left: -10px;
     padding: 10px;
 }
+
 input[type=checkbox] {
     margin: 4px 0 0;
     line-height: normal;
     width: 15px;
     height: 15px;
-    
-    }
+
+}
