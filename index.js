@@ -26,6 +26,33 @@ function addItemToList() {
       };
 
       listItem.appendChild(deleteButton);
+      // Add a button to mark the task as important
+      var markImportantButton = document.createElement("button");
+      markImportantButton.appendChild(document.createTextNode("Important"));
+      markImportantButton.classList.add("mark-important-btn");
+      markImportantButton.onclick = function () {
+          markAsImportant(listItem);
+      };
+
+      // Add a checkbox to mark the task as completed
+      var markCompletedCheckbox = document.createElement("input");
+      markCompletedCheckbox.type = "checkbox";
+      markCompletedCheckbox.classList.add("mark-completed-checkbox");
+      markCompletedCheckbox.onclick = function () {
+          markAsCompleted(listItem);
+      };
+
+      // Append the button and checkbox to the list item
+      listItem.appendChild(markImportantButton);
+      listItem.appendChild(markCompletedCheckbox);
+
+      document.getElementById("itemList").appendChild(listItem);
+      document.getElementById("itemInput").value = "";
+      //  // Append the button to the list item
+      //  listItem.appendChild(markImportantButton);
+
+      //  document.getElementById("itemList").appendChild(listItem);
+      //  document.getElementById("itemInput").value = "";
     } else {
       alert("Please enter a valid item.");
     }
@@ -35,6 +62,15 @@ function addItemToList() {
         var list = document.getElementById("itemList");
         list.removeChild(item);
       }
+       // Function to mark a task as important
+       function markAsImportant(task) {
+        task.classList.toggle('important-task');
+    }
+
+    // Function to mark a task as completed
+    function markAsCompleted(task) {
+        task.classList.toggle('completed-task');
+    }
 }
 
 //function that displays current day in to do list app
