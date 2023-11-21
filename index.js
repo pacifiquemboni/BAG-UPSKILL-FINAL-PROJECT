@@ -52,9 +52,6 @@ function displayCurrentDay() {
     var currentDayName = daysOfWeek[currentDayIndex];
 
     // Display the current day in the paragraph with id "currentDay"
-    document.getElementById('to-day').innerHTML = 'To Day is : ' + currentDayName;
+    document.getElementById('to-day').innerHTML =  currentDayName+ ' ' + 'Tasks : ';
+    // alert(currentDayName+ ' ' + 'Tasks : ')
 }
-
-
- 
-  

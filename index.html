@@ -6,16 +6,28 @@
         <script src="./index.js"></script>
     
     </head>
+    
     <body onload="displayCurrentDay()">
+        <div class="parent">
         <div class="maindiv">
-            <img src="/images/clock.png">
+            <img src="/images/TODO2.png">
             <h1>To-Do List App</h1>
-            <h5 id="to-day"></h5>
+            
             <input type="text" name="userText" id="itemInput" placeholder="eg:Morning sports,Break fast">
             <button id="Submit-btn" onclick="addItemToList()" >Add Task</button>
-           <!-- <input type="button" name="Submit" value="Submit" onclick="addItemToList()" id="Submit-btn"> -->
-            <ul id="itemList"></ul>
+           
             
         </div>
+        <div class="listdiv">
+            <img src="/images/TODO2.png">
+            <h1 id="to-day"></h1>
+            <ul id="itemList"></ul>
+            
+            
+            
+            
+        </div>
+        </div>
+
     </body>
 </html>
