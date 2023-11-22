@@ -37,9 +37,9 @@ function addItemToList() {
     editTaskButton.onclick = function () {
       editTask(listItem);
     };
-
-    listItem.appendChild(editTaskButton);
     listItem.appendChild(deleteButton);
+    listItem.appendChild(editTaskButton);
+
     listItem.appendChild(markImportantButton);
 
     document.getElementById("itemList").appendChild(listItem);
@@ -146,8 +146,6 @@ function retrieveTasksFromLocalStorage() {
     });
   }
 }
-
-
 // Function to mark a task as important
 function markAsImportant(task) {
   task.classList.toggle("important-task");
