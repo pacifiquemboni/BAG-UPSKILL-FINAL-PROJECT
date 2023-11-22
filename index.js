@@ -29,6 +29,8 @@ function addItemToList() {
     deleteButton.classList.add("delete-btn");
     deleteButton.onclick = function () {
       deleteItem(listItem);
+      
+
     };
 
     var editTaskButton = document.createElement("button");
@@ -162,6 +164,19 @@ function markAsCompleted(task) {
 function deleteItem(item) {
   var list = document.getElementById("itemList");
   list.removeChild(item);
+  // Get the index of the item to be deleted
+  var index = Array.from(list.children).indexOf(item);
+
+  // Retrieve tasks from local storage
+  var tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+  // Remove the corresponding task from the tasks array
+  tasks.splice(index, 1);
+
+  // Save the updated tasks array back to local storage
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+
+
 }
 
 // Function to edit a task
