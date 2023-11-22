@@ -20,6 +20,12 @@ body {
     gap: 05px;
 
 }
+.parent-item {
+    flex: 1; /* Each item takes equal space */
+    flex-basis: calc(33.33% - 20px); /* Calculate width with some margin between items */
+    margin: 10px; /* Adjust margin as needed */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
 
 h1 {
     text-align: center;
