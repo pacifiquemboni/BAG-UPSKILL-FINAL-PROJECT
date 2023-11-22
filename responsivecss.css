@@ -1,0 +1,7 @@
+/* responsive for mobile */
+@media only screen and(max-width:599px) {
+    .maindiv,
+    .listdiv{
+        width: 95%;
+    }
+}
