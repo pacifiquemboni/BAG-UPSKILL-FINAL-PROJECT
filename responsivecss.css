@@ -66,11 +66,44 @@
 @media (max-width: 767px){
     .parent{
         font-size: medium;
+    
+        margin-left: 02%;
+        margin-right: 02%;
+    }
+    .parent-item{
+        width: 89%;
+    }
+    input{
+        width: 350px;
+    }
+    .maindiv {
+        border-radius: 18px 18px 0px 0px;
+    }
+    .listdiv {
+        border-radius: 0px 0px 18px 18px;
+        margin-top: 10px;
+        
     }
 }
 @media (max-width: 480px){
     .parent-item{
         font-size: small;
+        margin-left: 02%;
+        margin-right: 02%;
+    }
+    .parent-item{
+        width: 89%;
+    }
+    input{
+        width: 350px;
+    }
+    .maindiv {
+        border-radius: 18px 18px 0px 0px;
+    }
+    .listdiv {
+        border-radius: 0px 0px 18px 18px;
+        margin-top: 10px;
+        
     }
 }
 
