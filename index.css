@@ -9,51 +9,38 @@ body {
 
 
 }
-
-.parent {
-    margin-top: 50px;
-    display: flex;
-
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 05px;
-
-}
-.parent-item {
-    flex: 1; /* Each item takes equal space */
-    flex-basis: calc(33.33% - 20px); /* Calculate width with some margin between items */
-    margin: 10px; /* Adjust margin as needed */
-    box-sizing: border-box; /* Include padding and border in the width */
-  }
-
 h1 {
     text-align: center;
 }
-
-.maindiv {
-    width: 400px;
-
-    background-color: #21201e;
-    opacity: 90%;
-    padding: 15px;
-    border-radius: 18px 0px 0px 18px;
-    box-shadow: 0 0px 4px #fea609;
-
-    margin-top: 0px;
-
+.parent {
+    
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.listdiv {
-    width: 400px;
 
+.parent-item {
+    width: 45%;
+
+    float: left;
     background-color: #21201e;
     opacity: 90%;
     padding: 20px;
-    border-radius: 0px 18px 18px 0px;
+    min-height: 190px;
     box-shadow: 0 0px 4px #fea609;
-
+    margin-left: 3px;
     margin-top: 0px;
+}
+
+.maindiv {
+    border-radius: 18px 0px 0px 18px;
+}
+.listdiv {
+    border-radius: 0px 18px 18px 0px;
+}
+label{
+    padding: 10px;
 }
 
 
@@ -73,7 +60,7 @@ h1 {
 }
 
 input {
-    width: 350px;
+    width: 370px;
     height: 30px;
     color: #fea609;
     margin-bottom: 10px;

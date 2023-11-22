@@ -1,7 +1,76 @@
-/* responsive for mobile */
-@media only screen and(max-width:599px) {
-    .maindiv,
-    .listdiv{
-        width: 95%;
+
+@media (max-width: 1440px){
+    
+    .parent-item {
+        width: 44%;
+    
+    }
+    input{
+        width: 360px;
+    }
+   
+    
+}
+@media (max-width: 1024px){
+    .parent-item{
+        width: 44%;
+    }
+    input{
+        width: 300px;
     }
 }
+@media (max-width: 952px){
+    .parent{
+        margin-right: 05%;
+        margin-left: 05%;
+    }
+    .parent-item{
+        width: 44%;
+    }
+    
+}
+/* @media (max-width: 768px){
+    .parent-item{
+        width: 45%;
+        font-size: medium;
+    }
+    .maindiv {
+        border-radius: 18px 18px 0px 0px;
+    }
+    .listdiv {
+        border-radius: 0px 0px 18px 18px;
+        
+    }
+} */
+@media (max-width: 858px){
+    .parent{
+        margin-left: 02%;
+        margin-right: 02%;
+    }
+    .parent-item{
+        width: 89%;
+    }
+    input{
+        width: 350px;
+    }
+    .maindiv {
+        border-radius: 18px 18px 0px 0px;
+    }
+    .listdiv {
+        border-radius: 0px 0px 18px 18px;
+        margin-top: 10px;
+        
+    }
+    
+}
+@media (max-width: 767px){
+    .parent{
+        font-size: medium;
+    }
+}
+@media (max-width: 480px){
+    .parent-item{
+        font-size: small;
+    }
+}
+

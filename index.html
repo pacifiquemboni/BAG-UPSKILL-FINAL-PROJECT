@@ -9,10 +9,11 @@
 
   <body onload="displayCurrentDay(),retrieveTasksFromLocalStorage()">
     <div class="parent">
-        <div class="maindiv">
-            <img src="./images/TODO2.png"
+        <div class="maindiv parent-item">
+            <img src="./images/TODO2.png">
           <h1>To-Do List App</h1>
           <input type="text" name="userText" id="itemInput" placeholder="eg: Morning sports, Breakfast"/>
+          <label for="filterCategory"> Category:</label>
           <select id="categoryInput">
             <option value="personal">Personal</option>
             <option value="work">Work</option>
@@ -21,7 +22,7 @@
           </select>
           <button id="Submit-btn" onclick="addItemToList()">Add Task</button>
         </div>
-        <div class="listdiv">
+        <div class="listdiv parent-item">
             <img src="./images/TODO2.png">
           <h1 id="to-day"></h1>
           <label for="filterCategory">Filter by Category:</label>
