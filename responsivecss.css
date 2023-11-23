@@ -56,7 +56,24 @@
         margin-right: -35px;
         float: right;
     }
-    
+    .delete-btn img{
+        width: 20px;
+        height: 20px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    .mark-important-btn img{
+        width: 20px;
+        height: 20px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    .edit-task-btn img{
+        width: 20px;
+        height: 20px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
 }
 @media (max-width: 768px){
     .parent{

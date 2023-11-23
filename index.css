@@ -1,5 +1,5 @@
 body {
-    background-image: url(./images/bg2f.jpg);
+    background-image: url(./images/wow3.jpg);
     background-color: white;
     color: black;
     background-position: fixed;
@@ -27,7 +27,7 @@ h1 {
 
     float: left;
     background-color: white;
-    opacity: 95%;
+    opacity: 90%;
     padding: 20px;
     min-height: 190px;
     box-shadow: 0 0px 4px darkblue;
@@ -100,14 +100,20 @@ input[type=text] {
 
 .delete-btn {
     float: right;
-   
+    
     color: red;
     border: none;
-    padding: 5px 10px;
+    padding: 3px 7px;
     cursor: pointer;
     border-radius: 10px;
+    
 }
-
+.delete-btn img{
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
 .completed-task {
     text-decoration: line-through;
     /* Add a strikethrough effect */
@@ -129,20 +135,32 @@ input[type=text] {
 
 .mark-important-btn {
     border: none;
-    padding: 5px 10px;
+    padding: 3px 7px;
     cursor: pointer;
     float: right;
     margin-right: 2px;
     border-radius: 10px;
 }
+.mark-important-btn img{
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
 
 .edit-task-btn {
     border: none;
-    padding: 5px 10px;
+    padding: 3px 7px;
     cursor: pointer;
     float: right;
     margin-right: 2px;
     border-radius: 10px;
+}
+.edit-task-btn img{
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+    margin-right: 0px;
 }
 
 .mark-completed-checkbox {

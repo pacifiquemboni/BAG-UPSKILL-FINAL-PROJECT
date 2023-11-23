@@ -8,8 +8,11 @@ function addItemToList() {
     listItem.appendChild(document.createTextNode(inputValue));
     listItem.setAttribute("data-category", categoryValue);
 
+    
     var markImportantButton = document.createElement("button");
-    markImportantButton.appendChild(document.createTextNode("Important"));
+    var image2 =new Image();
+    image2.src = './images/important.png';
+    markImportantButton.appendChild(image2);
     markImportantButton.classList.add("mark-important-btn");
     markImportantButton.onclick = function () {
       markAsImportant(listItem);
@@ -23,9 +26,14 @@ function addItemToList() {
     };
 
     listItem.appendChild(markCompletedCheckbox);
+    
+    // adding image icon on delete button
+    const image = new Image();
+    image.src = "./images/delete.png";
+    
 
     var deleteButton = document.createElement("button");
-    deleteButton.appendChild(document.createTextNode("X"));
+    deleteButton.appendChild(image);
     deleteButton.classList.add("delete-btn");
     deleteButton.onclick = function () {
       deleteItem(listItem);
@@ -34,7 +42,9 @@ function addItemToList() {
     };
 
     var editTaskButton = document.createElement("button");
-    editTaskButton.appendChild(document.createTextNode("Edit"));
+    var image3 = new Image();
+    image3.src = './images/edit.png';
+    editTaskButton.appendChild(image3);
     editTaskButton.classList.add("edit-task-btn");
     editTaskButton.onclick = function () {
       editTask(listItem);
@@ -111,8 +121,11 @@ function retrieveTasksFromLocalStorage() {
       }
 
       // Add buttons to each reconstructed task
+      
       var markImportantButton = document.createElement("button");
-      markImportantButton.appendChild(document.createTextNode("Important"));
+      var impimage = new Image();
+      impimage.src = './images/important.png';
+      markImportantButton.appendChild(impimage);
       markImportantButton.classList.add("mark-important-btn");
       markImportantButton.onclick = function () {
         markAsImportant(listItem);
@@ -125,15 +138,19 @@ function retrieveTasksFromLocalStorage() {
         markAsCompleted(listItem);
       };
 
+      var delimage=  new Image();
+      delimage.src = './images/delete.png';
       var deleteButton = document.createElement("button");
-      deleteButton.appendChild(document.createTextNode("X"));
+      deleteButton.appendChild(delimage);
       deleteButton.classList.add("delete-btn");
       deleteButton.onclick = function () {
         deleteItem(listItem);
       };
 
       var editTaskButton = document.createElement("button");
-      editTaskButton.appendChild(document.createTextNode("Edit"));
+      var editimage = new Image();
+      editimage.src = './images/edit.png';
+      editTaskButton.appendChild(editimage);
       editTaskButton.classList.add("edit-task-btn");
       editTaskButton.onclick = function () {
         editTask(listItem);
