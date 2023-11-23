@@ -1,19 +1,21 @@
 body {
-    background-image: url(./images/bg31.jpg);
-    background-color: #21201e;
+    background-image: url(./images/bg2f.jpg);
+    background-color: white;
+    color: black;
     background-position: fixed;
     background-size: 100%;
 
     background-repeat: auto;
-    color: #fea609;
-
-
 }
+
+
+
 h1 {
     text-align: center;
 }
+
 .parent {
-    
+
     margin-top: 50px;
     margin-left: 10%;
     margin-right: 10%;
@@ -24,22 +26,24 @@ h1 {
     width: 45%;
 
     float: left;
-    background-color: #21201e;
-    opacity: 90%;
+    background-color: white;
+    opacity: 95%;
     padding: 20px;
     min-height: 190px;
-    box-shadow: 0 0px 4px #fea609;
-    margin-left: 3px;
+    box-shadow: 0 0px 4px darkblue;
+    margin-left: 5px;
     margin-top: 0px;
 }
 
 .maindiv {
     border-radius: 18px 0px 0px 18px;
 }
+
 .listdiv {
     border-radius: 0px 18px 18px 0px;
 }
-label{
+
+label {
     padding: 10px;
 }
 
@@ -59,30 +63,36 @@ label{
     float: right;
 }
 
-input {
-    width: 370px;
-    height: 30px;
-    color: #fea609;
+
+input[type=text] {
+    /* color: #fea609; */
     margin-bottom: 10px;
     border-radius: 05px;
-    border: #fea609;
-    background-color: black;
-
+     padding: 08px;
+    border: 1px solid #ccc;
+    resize: vertical;
 }
 
 #Submit-btn {
-
-    padding: 10px;
-    color: #fea609;
-    background-color: black;
     border-radius: 05px;
     border: #ddd;
+
+
+
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
 }
+
+#submit-btn:hover {
+    background-color: #45a049;
+}
+
 
 #itemList li {
     padding: 20px;
     list-style: none;
-    /*box-shadow: 0 4px 8px rgba(62, 233, 0, 0.1); */
+   
     margin-left: -50px;
     border-bottom: 1px solid #ddd;
     text-align: center;
@@ -90,7 +100,7 @@ input {
 
 .delete-btn {
     float: right;
-    /* background-color: red; */
+   
     color: red;
     border: none;
     padding: 5px 10px;
@@ -107,9 +117,9 @@ input {
 }
 
 .important-task {
-    background-color: orange;
+    background-color: #21201e;
     /* Change the color as needed */
-    color: #21201e;
+    color: white;
 }
 
 .button-container {
@@ -118,9 +128,6 @@ input {
 }
 
 .mark-important-btn {
-    background-color: black;
-    /* Change the color as needed */
-    color: #fea609;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
@@ -130,9 +137,6 @@ input {
 }
 
 .edit-task-btn {
-    background-color: black;
-    /* Change the color as needed */
-    color: #fea609;
     border: none;
     padding: 5px 10px;
     cursor: pointer;

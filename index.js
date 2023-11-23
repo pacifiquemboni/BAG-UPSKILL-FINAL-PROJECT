@@ -29,8 +29,8 @@ function addItemToList() {
     deleteButton.classList.add("delete-btn");
     deleteButton.onclick = function () {
       deleteItem(listItem);
-      
 
+      
     };
 
     var editTaskButton = document.createElement("button");
@@ -231,3 +231,5 @@ function filterTasksByCategory() {
     }
   }
 }
+
+

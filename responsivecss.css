@@ -29,19 +29,7 @@
     }
     
 }
-/* @media (max-width: 768px){
-    .parent-item{
-        width: 45%;
-        font-size: medium;
-    }
-    .maindiv {
-        border-radius: 18px 18px 0px 0px;
-    }
-    .listdiv {
-        border-radius: 0px 0px 18px 18px;
-        
-    }
-} */
+
 @media (max-width: 858px){
     .parent{
         margin-left: 02%;
@@ -61,9 +49,16 @@
         margin-top: 10px;
         
     }
+    .listdiv img {
+        width: 60px;
+        height: 60px;
+        margin-top: -290px;
+        margin-right: -35px;
+        float: right;
+    }
     
 }
-@media (max-width: 767px){
+@media (max-width: 768px){
     .parent{
         font-size: medium;
     
@@ -71,7 +66,7 @@
         margin-right: 02%;
     }
     .parent-item{
-        width: 89%;
+        width: 93%;
     }
     input{
         width: 350px;
@@ -92,10 +87,10 @@
         margin-right: 02%;
     }
     .parent-item{
-        width: 89%;
+        width: 86%;
     }
     input{
-        width: 350px;
+        width: 280px;
     }
     .maindiv {
         border-radius: 18px 18px 0px 0px;
@@ -106,4 +101,73 @@
         
     }
 }
+@media(max-width: 375px){
+    .parent-item{
+        font-size: small;
+        margin-left: 02%;
+        margin-right: 02%;
+    }
+    .parent-item{
+        width: 86%;
+    }
+    input{
+        width: 250px;
+    }
+    .maindiv {
+        border-radius: 18px 18px 0px 0px;
+    }
+    .listdiv {
+        border-radius: 0px 0px 18px 18px;
+        margin-top: 10px;
+        
+    }
+    .mark-important-btn {
+        font-size: small;
+        padding: 2.5px 5px;
+     }
+     
+     .edit-task-btn {
+        font-size: small;
+        padding: 2.5px 5px;
+     }
+     .delete-btn {
+         font-size: small;
+         padding: 2.5px 5px;
+     }
+}
+@media(max-width: 320px){
+    .parent-item{
+        font-size: small;
+        margin-left: 02%;
+        margin-right: 02%;
+    }
+    .parent-item{
+        width: 86%;
+    }
+    input{
+        width: 250px;
+    }
+    .maindiv {
+        border-radius: 18px 18px 0px 0px;
+    }
+    .listdiv {
+        border-radius: 0px 0px 18px 18px;
+        margin-top: 10px;
+        
+    }
+    .mark-important-btn {
+       font-size: smaller;
+       padding: 2.5px 5px;
+    }
+    
+    .edit-task-btn {
+       font-size: smaller;
+       padding: 2.5px 5px;
+    }
+    .delete-btn {
+        font-size: smaller;
+        padding: 2.5px 5px;
+    }
+    
 
+}
