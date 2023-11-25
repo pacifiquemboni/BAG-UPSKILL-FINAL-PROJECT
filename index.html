@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>TO-DO APP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./responsivecss.css" />
@@ -11,31 +11,33 @@
   <body onload="displayCurrentDay(),retrieveTasksFromLocalStorage()">
     <div class="parent">
       <div class="maindiv parent-item">
-        <img src="./images/TODO2.png" />
+        <img src="./images/to-do1.png" />
         <h1>To-Do List App</h1>
         <input
           type="text"
           name="userText"
           id="itemInput"
-          placeholder="eg: Morning sports, Breakfast"
+          placeholder="enter your task here"
         />
         <label for="filterCategory"> Category:</label>
         <select id="categoryInput">
-          <option value="personal">Personal</option>
-          <option value="work">Work</option>
-          <option value="shopping">Shopping</option>
+          <option value="none">none</option>
+          <option value="morning">Morning</option>
+          <option value="afternoon">Afternoon</option>
+          <option value="evening">Evening</option>
         </select>
         <button id="Submit-btn" onclick="addItemToList()">Add Task</button>
       </div>
       <div class="listdiv parent-item">
-        <img src="./images/TODO2.png" />
+        <img src="./images/to-do3.png" />
         <h1 id="to-day"></h1>
         <label for="filterCategory">Filter by Category:</label>
         <select id="filterCategory" onchange="filterTasksByCategory()">
           <option value="all">All</option>
-          <option value="personal">Personal</option>
-          <option value="work">Work</option>
-          <option value="shopping">Shopping</option>
+          <option value="all">non</option>
+          <option value="morning">Morning</option>
+          <option value="afternoon">Afternoon</option>
+          <option value="evening">Evening</option>
         </select>
         <ul id="itemList"></ul>
       </div>

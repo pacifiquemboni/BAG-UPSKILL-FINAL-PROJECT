@@ -1,54 +1,63 @@
+@media (max-width: 1440px) {
 
-@media (max-width: 1440px){
-    
     .parent-item {
         width: 44%;
-    
+
     }
-    input{
+
+    input {
         width: 360px;
     }
-   
-    
+
+
 }
-@media (max-width: 1024px){
-    .parent-item{
+
+@media (max-width: 1024px) {
+    .parent-item {
         width: 44%;
     }
-    input{
+
+    input {
         width: 300px;
     }
 }
-@media (max-width: 952px){
-    .parent{
+
+@media (max-width: 952px) {
+    .parent {
         margin-right: 05%;
         margin-left: 05%;
     }
-    .parent-item{
+
+    .parent-item {
         width: 44%;
     }
-    
+
 }
 
-@media (max-width: 858px){
-    .parent{
+@media (max-width: 858px) {
+    .parent {
         margin-left: 02%;
         margin-right: 02%;
     }
-    .parent-item{
+
+    .parent-item {
         width: 89%;
     }
-    input{
+
+    input {
         width: 350px;
     }
+
     .maindiv {
         border-radius: 18px 18px 0px 0px;
     }
+
     .listdiv {
         border-radius: 0px 0px 18px 18px;
         margin-top: 10px;
-        
+
     }
+
     .listdiv img {
         width: 60px;
         height: 60px;
@@ -56,135 +65,174 @@
         margin-right: -35px;
         float: right;
     }
-    .delete-btn img{
+
+    .delete-btn img {
         width: 20px;
         height: 20px;
         margin-top: 0px;
         margin-right: 0px;
     }
-    .mark-important-btn img{
+
+    .mark-important-btn img {
         width: 20px;
         height: 20px;
         margin-top: 0px;
         margin-right: 0px;
     }
-    .edit-task-btn img{
+
+    .edit-task-btn img {
         width: 20px;
         height: 20px;
         margin-top: 0px;
         margin-right: 0px;
     }
 }
-@media (max-width: 768px){
-    .parent{
+
+@media (max-width: 768px) {
+    .parent {
         font-size: medium;
-    
+
         margin-left: 02%;
         margin-right: 02%;
     }
-    .parent-item{
+
+    .parent-item {
         width: 93%;
     }
-    input{
+
+    input {
         width: 350px;
     }
+
     .maindiv {
         border-radius: 18px 18px 0px 0px;
     }
+
     .listdiv {
         border-radius: 0px 0px 18px 18px;
         margin-top: 10px;
-        
+
+    }
+
+    .listdiv li {
+        font-size: 10px;
     }
 }
-@media (max-width: 480px){
-    .parent-item{
+
+@media (max-width: 480px) {
+    .parent-item {
         font-size: small;
         margin-left: 02%;
         margin-right: 02%;
     }
-    .parent-item{
+
+    .parent-item {
         width: 86%;
     }
-    input{
+
+    input {
         width: 280px;
     }
+
     .maindiv {
         border-radius: 18px 18px 0px 0px;
     }
+
     .listdiv {
         border-radius: 0px 0px 18px 18px;
         margin-top: 10px;
-        
+
+    }
+
+    .listdiv li {
+        font-size: 07px;
     }
 }
-@media(max-width: 375px){
-    .parent-item{
+
+@media(max-width: 375px) {
+    .parent-item {
         font-size: small;
         margin-left: 02%;
         margin-right: 02%;
     }
-    .parent-item{
+
+    .parent-item {
         width: 86%;
     }
-    input{
+
+    input {
         width: 250px;
     }
+
     .maindiv {
         border-radius: 18px 18px 0px 0px;
     }
+
     .listdiv {
         border-radius: 0px 0px 18px 18px;
         margin-top: 10px;
-        
+
     }
+
     .mark-important-btn {
         font-size: small;
         padding: 2.5px 5px;
-     }
-     
-     .edit-task-btn {
-        font-size: small;
-        padding: 2.5px 5px;
-     }
-     .delete-btn {
-         font-size: small;
-         padding: 2.5px 5px;
-     }
-}
-@media(max-width: 320px){
-    .parent-item{
-        font-size: small;
-        margin-left: 02%;
-        margin-right: 02%;
     }
-    .parent-item{
-        width: 86%;
-    }
-    input{
-        width: 250px;
-    }
-    .maindiv {
-        border-radius: 18px 18px 0px 0px;
-    }
-    .listdiv {
-        border-radius: 0px 0px 18px 18px;
-        margin-top: 10px;
-        
-    }
-    .mark-important-btn {
-       font-size: smaller;
-       padding: 2.5px 5px;
-    }
-    
+
     .edit-task-btn {
-       font-size: smaller;
-       padding: 2.5px 5px;
+        font-size: small;
+        padding: 2.5px 5px;
     }
+
+    .delete-btn {
+        font-size: small;
+        padding: 2.5px 5px;
+    }
+
+    .listdiv li {
+        font-size: 08px;
+    }
+}
+
+@media(max-width: 320px) {
+    .parent-item {
+        font-size: small;
+        margin-left: 02%;
+        margin-right: 02%;
+    }
+
+    .parent-item {
+        width: 86%;
+    }
+
+    input {
+        width: 250px;
+    }
+
+    .maindiv {
+        border-radius: 18px 18px 0px 0px;
+    }
+
+    .listdiv {
+        border-radius: 0px 0px 18px 18px;
+        margin-top: 10px;
+
+    }
+
+    .mark-important-btn {
+        font-size: smaller;
+        padding: 2.5px 5px;
+    }
+
+    .edit-task-btn {
+        font-size: smaller;
+        padding: 2.5px 5px;
+    }
+
     .delete-btn {
         font-size: smaller;
         padding: 2.5px 5px;
     }
-    
+
 
 }

@@ -1,3 +1,15 @@
+@font-face {
+    font-family: mySecondFont;
+    src: url(fonts/eurostile.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/ProgressPersonalUse-EaJdz.ttf);
+    font-weight: 700;
+}
+
 body {
     background-image: url(./images/bg2.jpg);
     background-color: white;
@@ -6,6 +18,12 @@ body {
     background-size: 100%;
 
     background-repeat: auto;
+    font-family: myFirstFont;
+}
+
+li {
+    font-family: mySecondFont;
+    cursor: pointer;
 }
 
 h1 {
@@ -66,7 +84,7 @@ input[type=text] {
     /* color: #fea609; */
     margin-bottom: 10px;
     border-radius: 05px;
-     padding: 08px;
+    padding: 08px;
     border: 1px solid #ccc;
     resize: vertical;
 }
@@ -82,36 +100,33 @@ input[type=text] {
     cursor: pointer;
 }
 
-#submit-btn:hover {
-    background-color: #45a049;
-}
-
-
 #itemList li {
     padding: 20px;
     list-style: none;
-   
-    margin-left: -50px;
+
+    margin-left: -60px;
     border-bottom: 1px solid #ddd;
     text-align: center;
 }
 
 .delete-btn {
     float: right;
-    
+
     color: red;
     border: none;
     padding: 3px 7px;
     cursor: pointer;
     border-radius: 10px;
-    
+
 }
-.delete-btn img{
+
+.delete-btn img {
     width: 20px;
     height: 20px;
     margin-top: 0px;
     margin-right: 0px;
 }
+
 .completed-task {
     text-decoration: line-through;
     /* Add a strikethrough effect */
@@ -139,7 +154,8 @@ input[type=text] {
     margin-right: 2px;
     border-radius: 10px;
 }
-.mark-important-btn img{
+
+.mark-important-btn img {
     width: 20px;
     height: 20px;
     margin-top: 0px;
@@ -154,7 +170,8 @@ input[type=text] {
     margin-right: 2px;
     border-radius: 10px;
 }
-.edit-task-btn img{
+
+.edit-task-btn img {
     width: 20px;
     height: 20px;
     margin-top: 0px;
@@ -174,3 +191,23 @@ input[type=checkbox] {
     height: 15px;
 
 }
+
+@keyframes slideIn {
+    from {
+      transform: translateZ(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .maindiv  {
+    transform: translateX(-100%);
+    animation: slideIn 1s ease-in-out forwards;
+  }
+  .listdiv  {
+    transform: translateX(100%);
+    animation: slideIn 1s ease-in-out forwards;
+  }
+  
+ 

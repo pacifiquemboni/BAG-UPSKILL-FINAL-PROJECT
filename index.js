@@ -3,15 +3,16 @@ function addItemToList() {
   var inputValue = document.getElementById("itemInput").value;
   var categoryValue = document.getElementById("categoryInput").value;
 
-  if (inputValue.trim() !== "") {
+  var taskText = inputValue.trim();
+  if (taskText !== "") {
     var listItem = document.createElement("li");
     listItem.appendChild(document.createTextNode(inputValue));
     listItem.setAttribute("data-category", categoryValue);
+    document.getElementById("itemList").appendChild(listItem);
 
-    
     var markImportantButton = document.createElement("button");
-    var image2 =new Image();
-    image2.src = './images/important.png';
+    var image2 = new Image();
+    image2.src = "./images/important.png";
     markImportantButton.appendChild(image2);
     markImportantButton.classList.add("mark-important-btn");
     markImportantButton.onclick = function () {
@@ -26,40 +27,50 @@ function addItemToList() {
     };
 
     listItem.appendChild(markCompletedCheckbox);
-    
+
     // adding image icon on delete button
     const image = new Image();
     image.src = "./images/delete.png";
-    
 
     var deleteButton = document.createElement("button");
     deleteButton.appendChild(image);
     deleteButton.classList.add("delete-btn");
     deleteButton.onclick = function () {
       deleteItem(listItem);
-
-      
     };
 
     var editTaskButton = document.createElement("button");
     var image3 = new Image();
-    image3.src = './images/edit.png';
+    image3.src = "./images/edit.png";
     editTaskButton.appendChild(image3);
     editTaskButton.classList.add("edit-task-btn");
     editTaskButton.onclick = function () {
       editTask(listItem);
     };
+    // Add click event listener to the task for editing
+    listItem.addEventListener("click", function () {
+      // Check if the clicked element is the content (not a button)
+      if (event.target.tagName === "LI") {
+      editTask(listItem);
+      }
+    });
+
     listItem.appendChild(deleteButton);
     listItem.appendChild(editTaskButton);
 
     listItem.appendChild(markImportantButton);
 
-    document.getElementById("itemList").appendChild(listItem);
+    // Get the task list
+    var taskList = document.getElementById("itemList");
+
+    // Insert the new task at the beginning of the list
+    taskList.insertBefore(listItem, taskList.firstChild);
 
     // Reorganize the list to move important tasks to the top
     sortImportantTasksToTop();
     // Save the tasks to local storage
     saveTasksToLocalStorage();
+
     document.getElementById("itemInput").value = "";
   } else {
     alert("Please enter a valid item.");
@@ -121,10 +132,10 @@ function retrieveTasksFromLocalStorage() {
       }
 
       // Add buttons to each reconstructed task
-      
+
       var markImportantButton = document.createElement("button");
       var impimage = new Image();
-      impimage.src = './images/important.png';
+      impimage.src = "./images/important.png";
       markImportantButton.appendChild(impimage);
       markImportantButton.classList.add("mark-important-btn");
       markImportantButton.onclick = function () {
@@ -138,8 +149,8 @@ function retrieveTasksFromLocalStorage() {
         markAsCompleted(listItem);
       };
 
-      var delimage=  new Image();
-      delimage.src = './images/delete.png';
+      var delimage = new Image();
+      delimage.src = "./images/delete.png";
       var deleteButton = document.createElement("button");
       deleteButton.appendChild(delimage);
       deleteButton.classList.add("delete-btn");
@@ -149,7 +160,7 @@ function retrieveTasksFromLocalStorage() {
 
       var editTaskButton = document.createElement("button");
       var editimage = new Image();
-      editimage.src = './images/edit.png';
+      editimage.src = "./images/edit.png";
       editTaskButton.appendChild(editimage);
       editTaskButton.classList.add("edit-task-btn");
       editTaskButton.onclick = function () {
@@ -192,8 +203,6 @@ function deleteItem(item) {
 
   // Save the updated tasks array back to local storage
   localStorage.setItem("tasks", JSON.stringify(tasks));
-
-
 }
 
 // Function to edit a task
@@ -248,5 +257,3 @@ function filterTasksByCategory() {
     }
   }
 }
-
-
