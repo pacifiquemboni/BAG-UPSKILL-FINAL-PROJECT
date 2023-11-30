@@ -207,11 +207,53 @@ function deleteItem(item) {
 
 // Function to edit a task
 function editTask(listItem) {
-  var newText = prompt("Edit task:", listItem.firstChild.textContent);
+  // Create a modal
+  var parentModal = document.createElement("div");
+  parentModal.classList.add("parentmodal");
+  var modal = document.createElement("div");
+  modal.classList.add("modal");
 
-  if (newText !== null && newText.trim() !== "") {
-    listItem.firstChild.textContent = newText;
-  }
+
+  // Create a text input
+  var input = document.createElement("input");
+  input.type = "text";
+  input.value = listItem.firstChild.textContent;
+
+  // Create a save button
+  var saveButton = document.createElement("button");
+  saveButton.textContent = "Save";
+  saveButton.onclick = function () {
+    var newText = input.value.trim();
+    if (newText !== "") {
+      listItem.firstChild.textContent = newText;
+      // Save the updated text to local storage
+      saveTasksToLocalStorage();
+       // Close the modal
+      parentModal.remove();
+    } else {
+      alert("Please enter a valid task.");
+    }
+  };
+
+  // Create a cancel button
+  var cancelButton = document.createElement("button");
+  cancelButton.textContent = "Cancel";
+  cancelButton.onclick = function () {
+    parentModal.remove(); // Close the modal
+  };
+
+  // Append elements to the modal
+  modal.appendChild(input);
+  modal.appendChild(saveButton);
+  modal.appendChild(cancelButton);
+
+  // Append the modal to the body
+  parentModal.appendChild(modal);
+  document.body.appendChild(parentModal);
+  
+
+  // Focus on the input field
+  input.focus();
 }
 
 //function that displays current day in to do list app
